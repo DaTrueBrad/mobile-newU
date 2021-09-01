@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Final - Form</title>
+  </head>
+  <body>
+    <img src="./2.png" alt="">
+    <main>
+      <h1>Create Program</h1>
+      <form action="submit">
+      <fieldset>
+              <legend>Goals</legend>
+          <h3>What is your goal?</h3>
+          <select name="goal" id="goal-dropdown">
+            <option value="0">General Health</option>
+            <option value="1">Weight Loss</option>
+            <option value="2">Muscle Building</option>
+            <option value="3">Build Strength</option>
+            <option value="4">Build Mobility</option>
+          </select>
+          <h3>How long have you had this goal?</h3>
+          <select name="goalLength" id="length-dropdown">
+            <option value="0">Less than 1 Month</option>
+            <option value="1">Less than 6 Months</option>
+            <option value="2">Less than 12 Months</option>
+            <option value="3">Longer</option>
+          </select>
+          
+        </fieldset>
+        <fieldset>
+            <legend>Pain</legend>
+            <h3>What pain do you Experience?</h3>
+            <div id='pain-container'>
+                <span class='checkbox-container' name='pain'>
+                    <span class="pains"><input type="checkbox" value='0' name='pain'>Lower Back</span>
+                    <span class="pains"><input type="checkbox" value='1' name='pain'>Upper Back</span>
+                    <span class="pains"><input type="checkbox" value='2' name='pain'>Shoulder</span>
+                    <span class="pains"><input type="checkbox" value='3' name='pain'>Neck</span>
+                    <span class="pains"><input type="checkbox" value='4' name='pain'>Elbow</span>
+                    <span class="pains"><input type="checkbox" value='5' name='pain'>Wrist</span>
+                </span>
+                <span class='checkbox-container'>
+                    <span class="pains"><input type="checkbox" value='6' name='pain'>Hip</span>
+                    <span class="pains"><input type="checkbox" value='7' name='pain'>Knee</span>
+                    <span class="pains"><input type="checkbox" value='8' name='pain'>Ankle</span>
+                    <span class="pains"><input type="checkbox" value='9' name='pain'>Foot</span>
+                    <span class="pains"><input type="checkbox" value='10' name='pain'>Finger</span>
+                    <span class="pains"><input type="checkbox" value='11' name='pain'>Other</span>
+                </span>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Programming</legend>
+            <h3>How long & how often wo you wish to exercise</h3>
+            <span id="programming-calc"><select name="frequency" id="frequency-dropdown">
+                <option value="0">1x / Week</option>
+                <option value="1">2x / Week</option>
+                <option value="2">3x / Week</option>
+                <option value="3">4x / Week</option>
+                <option value="4">5x / Week</option>
+                <option value="5">6x / Week</option>
+                <option value="6">7x / Week</option>
+            </select>
+            <select name="length" id="length-dropdown">
+                <option value="0">15 min / workout</option>
+                <option value="1">30 min / workout</option>
+                <option value="2">45 min / workout</option>
+                <option value="3">1 hour / workout</option>
+                <option value="4">1.5 hours / workout</option>
+                <option value="5">2 hours / workout</option>
+            </select>
+        </span>
+            
+        </fieldset>
+        <button type="submit" onclick="test()">Submit</button>
+        </form>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
