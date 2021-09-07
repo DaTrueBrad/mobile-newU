@@ -36,20 +36,57 @@
             <h3>What pain do you Experience?</h3>
             <div id='pain-container'>
                 <span class='checkbox-container' name='pain'>
-                    <span class="pains"><input type="checkbox" value='0' name='pain'>Lower Back</span>
-                    <span class="pains"><input type="checkbox" value='1' name='pain'>Upper Back</span>
-                    <span class="pains"><input type="checkbox" value='2' name='pain'>Shoulder</span>
-                    <span class="pains"><input type="checkbox" value='3' name='pain'>Neck</span>
-                    <span class="pains"><input type="checkbox" value='4' name='pain'>Elbow</span>
-                    <span class="pains"><input type="checkbox" value='5' name='pain'>Wrist</span>
+                    <span class="pains">
+                      <input type="hidden" name='lowerBack' value='off'>
+                      <input type="checkbox" name='lowerBack'>Lower Back
+                    </span>
+                    <span class="pains">
+                      <input type="hidden" name='upperBack' value='off'>
+                      <input type="checkbox" name='upperBack'>Upper Back
+                    </span>
+                    <span class="pains">
+                      <input type="hidden" name='shoulder' value="off">
+                      <input type="checkbox" name='shoulder'>Shoulder
+                    </span>
+                    <span class="pains">
+                      <input type="hidden" name='neck' value='off'>
+                      <input type="checkbox" name='neck'>Neck
+                    </span>
+                    <span class="pains">
+                      <input type="hidden" name='elbow' value='off'>
+                      <input type="checkbox" name='elbow'>Elbow
+                    </span>
+                    <span class="pains">
+                      <input type="hidden" name='wrist' value='off'>
+                      <input type="checkbox" name='wrist'>Wrist
+                    </span>
                 </span>
+                
                 <span class='checkbox-container'>
-                    <span class="pains"><input type="checkbox" value='6' name='pain'>Hip</span>
-                    <span class="pains"><input type="checkbox" value='7' name='pain'>Knee</span>
-                    <span class="pains"><input type="checkbox" value='8' name='pain'>Ankle</span>
-                    <span class="pains"><input type="checkbox" value='9' name='pain'>Foot</span>
-                    <span class="pains"><input type="checkbox" value='10' name='pain'>Finger</span>
-                    <span class="pains"><input type="checkbox" value='11' name='pain'>Other</span>
+                    <span class="pains">
+                      <input type="hidden" name='hip' value='off'>
+                      <input type="checkbox" name='hip'>Hip
+                    </span>
+                    <span class="pains">
+                      <input type="hidden" name='knee' value='off'>
+                      <input type="checkbox" name='knee'>Knee
+                    </span>
+                    <span class="pains">
+                      <input type="hidden" name='ankle' value='off'>
+                      <input type="checkbox" name='ankle'>Ankle
+                    </span>
+                    <span class="pains">
+                      <input type="hidden" name='foot' value='off'>
+                      <input type="checkbox" name='foot'>Foot
+                    </span>
+                    <span class="pains">
+                      <input type="hidden" name='finger' value='off'>
+                      <input type="checkbox" name='finger'>Finger
+                    </span>
+                    <span class="pains">
+                      <input type="hidden" name='other' value='off'>
+                      <input type="checkbox" name='other'>Other
+                    </span>
                 </span>
             </div>
         </fieldset>
